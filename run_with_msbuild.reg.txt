@@ -1,0 +1,35 @@
+Windows Registry Editor Version 5.00
+
+; Run with MsBuild
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild]
+@="Run with MsBuild"
+"Icon"="C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MsBuild.exe,0"
+
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild\command]
+@="cmd.exe /K \"\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MsBuild.exe\" \"%1\"\""
+
+; Run with MsBuild Release
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild (Release)]
+@="Run with MsBuild (Release)"
+
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild (Release)\command]
+@="cmd.exe /K \"\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MsBuild.exe\" \"%1\" /p:Configuration=Release\""
+
+; Run with MsBuild Debug
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild (Debug)]
+@="Run with MsBuild (Debug)"
+
+[HKEY_CLASSES_ROOT\MsBuild\shell\Run with MsBuild (Debug)\command]
+@="cmd.exe /K \"\"C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MsBuild.exe\" \"%1\" /p:Configuration=Debug\""
+
+[HKEY_CLASSES_ROOT\.msbuild]
+@="MsBuild"
+
+[HKEY_CLASSES_ROOT\.tasks]
+@="Tasks"
+
+[HKEY_CURRENT_USER\Software\Classes\MsBuild\DefaultIcon]
+@="C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe,0"
+
+[HKEY_CURRENT_USER\Software\Classes\Tasks\DefaultIcon]
+@="C:\\Windows\\Microsoft.NET\\Framework\\v4.0.30319\\MSBuild.exe,0"
