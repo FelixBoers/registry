@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\shell\console2]
+@="Open Folder in Console2"
+"Icon"="\"C:\\Tools\\Console2\\console.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\console2\command]
+@="\"C:\\Tools\\Console2\\console.exe\" -d \"%1\""
+
+
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\console2]
+@="Open Folder in Console2"
+"Icon"="\"C:\\Tools\\Console2\\console.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\console2\command]
+@="\"C:\\Tools\\Console2\\console.exe\" -d \"%V\""
