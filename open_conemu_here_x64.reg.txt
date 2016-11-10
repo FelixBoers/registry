@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\shell\conemu]
+@="Open Folder in ConEmu"
+"Icon"="\"C:\\Program Files\\ConEmu\\ConEmu64.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\conemu\command]
+@="\"C:\\Program Files\\ConEmu\\ConEmu64.exe\" /Single /Dir \"%1\""
+
+
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\conemu]
+@="Open Folder in CpmEmu"
+"Icon"="\"C:\\Program Files\\ConEmu\\ConEmu64.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\conemu\command]
+@="\"C:\\Program Files\\ConEmu\\ConEmu64.exe\" /Single /Dir \"%V\""
