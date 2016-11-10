@@ -1,0 +1,22 @@
+Windows Registry Editor Version 5.00
+
+; This will make it appear when you right click ON a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell]
+@="Open PowerShell here"
+"Icon"="\"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\shell\powershell\command]
+@="C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%L'"
+
+
+; This will make it appear when you right click INSIDE a folder
+; The "Icon" line can be removed if you don't want the icon to appear
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell]
+@="Open PowerShell here"
+"Icon"="\"C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe\",0"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\powershell\command]
+@="C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\powershell.exe -NoExit -Command Set-Location -LiteralPath '%V'"
