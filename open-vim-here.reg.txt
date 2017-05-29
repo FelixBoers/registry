@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open Vim here]
+@="Open Vim here"
+"Icon"="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\",1"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\shell\Open Vim here\command]
+@="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\" \"%1\""
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open Vim here]
+@="Open Vim here"
+"Icon"="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\",1"
+
+[HKEY_CURRENT_USER\Software\Classes\Directory\Background\shell\Open Vim here\command]
+@="\"C:\\Program Files (x86)\\Vim\\vim80\\gvim.exe\" \"%V\""
